@@ -1,0 +1,861 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+.pozadina{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(NYC.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navigacija {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  }
+  
+  .navigacija ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  .navigacija ul li{
+   display: inline-block;
+   margin: 0 10px;
+   position: relative;
+}
+  .navigacija ul li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); 
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+ }
+  .navigacija ul li ul.dropdown li{
+    display: block;
+    
+  }
+  .navigacija ul li ul.dropdown{
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    font-family: arial sans-serif;
+    
+  }
+  .navigacija ul li ul.dropdown a{
+    display: block;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px 5px;
+    font-size: 20px;
+ }
+  
+
+.navigacija ul li:hover ul.dropdown{
+  display: block;
+}
+
+.navigacija ul li ul.dropdown li::after {
+  height: 1px; 
+  width: 0%;
+  background: #f96b00;
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  transition: width 0.6s; 
+}
+
+
+.navigacija ul li ul.dropdown li:hover::after {
+  width: 100%;
+}
+
+ .navigacija ul li::after{
+content: "";
+height: 3px;
+width:0%;
+background: #f96b00;
+position: absolute;
+left: 0;
+bottom: -7px;
+transition: 0.6s;
+  }
+
+ .navigacija ul li:hover::after{
+    width: 100%;
+ }
+
+  
+ 
+  
+
+
+
+  .logo{
+ position: absolute;
+ cursor: pointer;
+ top: 30px;
+ left: 50px;
+ font-size: 40px; 
+ font-weight: bold;
+ font-family: arial sans-serif;
+ color: rgba(255, 255, 255, 0.8);
+ text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+ text-decoration: overline underline;
+}
+ 
+  
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 80px;
+   
+}
+.content p{
+margin: 10px auto;
+ font-weight: 100;
+ line-height: 25px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 17px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px 5px 20px 10px;
+    font-weight: bold;
+    font-family: arial sans-serif;
+    border: 2px solid#f96b00;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+button a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); 
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+span{
+    background: #f97613;
+    height: 100%;
+    width: 0%;
+    border-radius: 30px 5px 20px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+  
+
+
+.naslovna{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding: 152px;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(dosli.jpeg);
+  background-size: cover;
+}
+
+
+.naslovna h1{
+  font-size: 37px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #f96b00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.naslovna p{
+  color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 23px;
+  margin-bottom: 10px;
+  margin-top: 90px;
+  font-weight: bold;
+ 
+  
+
+}
+  
+.O-New-Yorku{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  background-color: black;
+  padding: 152px;
+  
+}
+.O-New-Yorku h1{
+  font-size: 37px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #f96b00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+
+}
+.stupci{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.stupci h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+.O-New-Yorku-col{
+  flex-basis: 31%;
+  background:#f96b00 ;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  margin-left: 10px;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+.O-New-Yorku-col:hover{
+    box-shadow: 0 0 20px 0px rgba(225, 225, 225, 0.80);
+}
+  
+  .Kultura{
+    width: 80%;
+    margin: auto;
+    padding: 152px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #f96b00;
+
+  }
+  .Kultura h1{
+    text-align: center;
+    font-size: 37px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color:white;
+
+  }
+  .Kultura-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+  }
+  .Kultura-col img{
+    width: 90%;
+    margin-top: 30px;
+    border-radius: 20%;
+    
+
+  }
+  .Kultura-col p{
+    color: white;
+    text-align: justify;
+    color: black;
+}
+  .Kultura-col h2{
+    color: black;
+  }
+
+ .Politika{
+  width: 80%;
+    margin: auto;
+    padding: 152px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+  .Politika h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color:#f96b00;
+    margin-bottom: 20px;
+    font-size: 37px;
+  }
+  .Politika p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+  .Politika img{
+    padding-top: 10px;
+    border-radius: 7%;
+  }
+  .podnožje{
+    width: 100%;
+    text-align: center;
+    padding: 1px 0;
+    background-color: #f96b00;
+    height: 50%;
+  }
+  .podnožje h2{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .ikone{
+    color:black;
+    margin:0 20px;
+    cursor: pointer;
+    padding: 20px 0;
+    font-size: 25px;
+  }
+ 
+  .podnožje p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+  }
+  
+
+  .kontakt{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),#f97613), url(kontakt.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form{
+    width: 90%;
+    max-width: 600px;
+  }
+  .input-elementi{
+    margin-bottom: 30px;
+    position: relative;
+  }
+  input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color:#fff;
+    background: transparent;
+    font-size: 14px;
+  }
+  label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: black;
+    cursor: text;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.2s;
+  }
+
+  #button2{
+    padding: 10px 0;
+    color: black;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    border-radius:  20px; 
+    border-radius: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+ }
+  input:focus~label,
+  input:valid~label,
+  textarea:focus~label,
+  textarea:valid~label{
+  top: -35px;
+  font-size: 12px;
+  }
+ 
+ #oautoru-body{
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(pozadinaa.jpg);
+  color: white;
+  margin-top: 60px;
+  background-size: cover;
+ }
+  
+ 
+ .o-autoru{
+  margin-top: 10px;
+  
+}
+
+
+ .o-autoru h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 48px;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  
+ }
+ .autor{
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+}
+ 
+ .autor-josipa{
+  background-color: #f96b00;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 700px;
+  position: relative;
+  padding: 20px;
+  line-height: 20px;
+  color: black;
+ }
+
+ .autor-josipa h2{
+  font-size: 25px;
+  margin-top: 90px;
+  margin-bottom: 5px;
+ }
+
+ .opis{
+  text-transform: uppercase;
+  margin: 12px 0;
+}
+
+ .slika{
+  width: 150px; 
+  height: 150px;
+  border-radius: 20%; 
+  background-size: cover; 
+  background-position: center; 
+  position: absolute;
+  top: -50px;
+  left: 300px;
+}
+
+ #body-vijesti{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75), black), url(pozadinaa.jpg);
+  background-size: cover;
+}
+
+ .vijesti{
+  width: 100%;
+}
+
+ .blog-odjeljak{
+  width: 85%;
+  margin: 20px auto;
+ }
+ .blog-odjeljak .title{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  color: white;
+ }
+ .blog-odjeljak .title h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 160px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f96b00;
+ }
+ .blog-odjeljak .title p{
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+ }
+ .kartice{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 25px auto;
+ }
+ .kartice .kartica{
+  width: 100%;
+  position: relative;
+
+ }
+ .slika-vijesti img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+ }
+ .sadrzaj{
+  padding: 15px 20px;
+ }
+ .sadrzaj h3{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f96b00;
+ }
+ .sadrzaj p{
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+ }
+ .sadrzaj a{
+  text-decoration: none;
+  margin-top: 12px;
+  display: inline-block;
+  background-color: #f96b00;
+  padding: 9px 16px;
+  color: black;
+  font-weight: bold;
+ }
+ .kartica .datum-objave{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #f96b00;
+  padding: 6px 15px;
+ }
+
+ #body-znamenitosti{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pozadinaa.jpg);
+  background-size: cover;
+ }
+
+ .znamenitosti{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+ .znamenitosti h1{
+  color: #f96b00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin-top: 113px;
+  margin-bottom: 10px;
+ }
+ .znamenitosti p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border: solid 2px #f96b00;
+  
+ }
+
+ .znamenitosti-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+ .znamenitosti-col img{
+   width: 100%;
+   display: block;
+   
+}
+ 
+.sloj{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.sloj:hover{
+  background: rgba(249, 107, 0, 0.7);
+  cursor: pointer;
+}
+
+.sloj h3{
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 25px;
+  bottom: 0;
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.sloj:hover h3{
+ bottom: 49%;
+ opacity: 1;
+}
+
+.tekst-kip p{
+  margin-top: 30px;
+  color: white;
+  width: 80%;
+  margin-left: 150px;
+  line-height: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid 2px white;
+  background-color: #f96b00;
+  color: black;
+  transition: 0.5s;
+  
+
+}
+.tekst-kip p:hover{
+box-shadow: 0 0 20px 0px rgba(225, 225, 225, 0.30);
+}
+
+
+.tekst-times p{
+  margin-top: 20px;
+  color: white;
+  width: 80%;
+  margin-left: 150px;
+  line-height: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid 2px white;
+  background-color: #f96b00;
+  color: black;
+  transition: 0.5s;
+}
+.tekst-times:hover p{
+  box-shadow: 0 0 20px 0px rgba(225, 225, 225, 0.30);
+}
+
+.tekst-empirestate p{
+  margin-top: 20px;
+  color: white;
+  width: 80%;
+  margin-left: 150px;
+  line-height: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid 2px white;
+  background-color: #f96b00;
+  color: black;
+  margin-bottom: 150px;
+  transition: 0.5s;
+}
+.tekst-empirestate:hover p{
+  box-shadow: 0 0 20px 0px rgba(225, 225, 225, 0.30);
+}
+
+
+#body-zanimljivosti{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pozadinaa.jpg);
+ 
+}
+
+
+.zanimljivosti{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.zanimljivosti h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin-top: 113px;
+  margin-bottom: 10px;
+  color: #f96b00;
+}
+.zanimljivosti p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 18px;
+  margin-bottom: 18px;
+  color: white;
+  border: solid 2px #f96b00;
+}
+
+
+
+.činjenice{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+.činjenice h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  color: #f96b00;
+}
+.činjenice p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 15px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.činjenica2{
+  margin-top: 25px;
+}
+.činjenica3 p{
+  margin-top: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+.slike2{
+  display: flex;
+}
+.slike2 img{
+  width: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.činjenica4 p{
+  margin-top:  25px; 
+}
+.činjenica5 p{
+  margin-top: 25px;
+}
+.činjenica6 p{
+  margin-top: 25px;
+}
+.činjenica7 p{
+  margin-top: 25px;
+}
+.činjenica8 p{
+  margin-top: 25px;
+  
+}
+
+#body-aktivnosti{
+  width: 100%;
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pozadinaa.jpg);
+  background-size: cover;
+ 
+}
+.aktivnosti{
+  width: 80%;
+  text-align: center;
+  margin: 40px auto 30px;
+  
+}
+.aktivnosti h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin-top: 165px;
+  margin-bottom: 10px;
+  color: #f96b00;
+}
+.aktivnosti p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 18px;
+  color: white;
+  border: solid 2px #f96b00;
+}
+.flip-card {
+ display: inline-block;
+ margin: 25px;
+ vertical-align: top; 
+ box-sizing: border-box;
+ width: 450px;
+ height: 450px;
+ position: relative;
+ cursor: pointer;
+ margin-bottom: 20%;
+}
+
+.flip-card img{
+  border-radius: 10px;
+}
+
+.flip-card-prednja{
+  z-index: 2;
+}
+
+.flip-card-pozadina{
+  background-color: #f96b00;
+  color: white;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+.flip-card-pozadina .pozadina-zaglavlje{
+  height: 45%;
+  text-align: center;
+}
+.flip-card-pozadina .pozadina-zaglavlje img{
+  width: 50%;
+  margin-top: 20px;
+  
+}
+.flip-card-unutarnja{
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  
+}
+.flip-card-prednja, .flip-card-pozadina{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+.flip-card:hover .flip-card-unutarnja {
+  transform: rotateY(180deg);
+}
+.flip-card-pozadina .pozadina-podnožje{
+  height: 500px;
+  padding: 0 15px;
+}
+.pozadina-podnožje h2{
+ text-align: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ margin-bottom: 5px;
+}
+.pozadina-podnožje p{
+  text-align: justify;
+  font-size: 16.1px;
+
+}
+  
+  
+
+
